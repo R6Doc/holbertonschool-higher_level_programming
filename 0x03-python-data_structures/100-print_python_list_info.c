@@ -12,7 +12,7 @@ if (strcmp(p->ob_type->tp_name, "list") == 0)
 list = (PyListObject *)p;
 size = list->ob_base.ob_size;
 printf("[*] Size of the Python List= %ld\n", size);
-printf("[*] Allocated= %ld\n", list->allocated);
+printf("[*] Allocated = %ld\n", list->allocated);
 for (i = 0; i < size; i++)
 {
 object = list->ob_item[i];
