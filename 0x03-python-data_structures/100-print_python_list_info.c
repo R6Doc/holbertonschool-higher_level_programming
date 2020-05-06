@@ -1,5 +1,8 @@
 #include "Python.h"
-
+/**
+ * print_python_list_info - print list info in python file
+ * @p: python object
+ */
 void print_python_list_info(PyObject *p)
 {
 PyListObject *list;
