@@ -13,7 +13,7 @@ class Rectangle:
 
     @property
     def width(self):
-        """get the private instance width"""
+        """get for the private instance width"""
         return self.__width
 
     @width.setter
@@ -32,7 +32,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """set the private instance height"""
+        """set the private instance attribute height"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
@@ -50,9 +50,13 @@ class Rectangle:
         return (self.__width * 2) + (self.__height * 2)
 
     def __str__(self):
-        """retur print string of the rectangle"""
+        """return print string of the rectangle"""
         string = ""
         if self.__width != 0 and self.__height != 0:
             string += "\n".join("#" * self.__width
                                 for j in range(self.__height))
         return string
+
+    def __repr__(self):
+        """return a string of the rectangle"""
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
