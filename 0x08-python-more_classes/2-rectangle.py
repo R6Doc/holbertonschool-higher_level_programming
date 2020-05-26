@@ -1,23 +1,24 @@
 #!/usr/bin/python3
 """
-Defines a class Rectangle
+Define a class Rectangle
 """
 
 
 class Rectangle:
+    """Represent rectangle"""
     def __init__(self, width=0, height=0):
-        """Initia rectangle"""
+        """Initialize rectangle"""
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """get the private ttribute width"""
+        """get the private instance width"""
         return self.__width
 
     @width.setter
     def width(self, value):
-        """set the private var width"""
+        """set the private instance width"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
@@ -26,12 +27,12 @@ class Rectangle:
 
     @property
     def height(self):
-        """get the private var height"""
+        """get the private instance height"""
         return self.__height
 
     @height.setter
     def height(self, value):
-        """set the private  attribute height"""
+        """set the private instance height"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
@@ -39,7 +40,7 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """retur area of final rectangle"""
+        """retur area of rectangle"""
         return self.__width * self.__height
 
     def perimeter(self):
