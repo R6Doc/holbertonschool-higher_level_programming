@@ -20,7 +20,7 @@ class Rectangle:
         """get private instance width"""
         return self.__width
 
-    @width.set
+    @width.setter
     def width(self, value):
         """set private instance width"""
         if type(value) is not int:
@@ -34,7 +34,7 @@ class Rectangle:
         """get private instance  height"""
         return self.__height
 
-    @height.set
+    @height.setter
     def height(self, value):
         """set private instance  height"""
         if type(value) is not int:
