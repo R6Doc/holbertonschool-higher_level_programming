@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """
-Readfile function
+Contain read_file function
 """
 
 
 def read_file(filename=""):
-    """ Reads a file content with with statement"""
-    with open("my_file_0.txt", encoding="UTF8") as myfile:
-        print(myfile.read())
+    """""read text file and prints to stdout"""
+    with open(filename, "r", encoding="utf-8") as f:
+        print(f.read(), end="")
