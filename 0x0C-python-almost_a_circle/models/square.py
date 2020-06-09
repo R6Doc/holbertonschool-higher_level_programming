@@ -2,6 +2,7 @@
 """
 Square Class module
 """
+
 from models.rectangle import Rectangle
 
 
@@ -11,7 +12,7 @@ class Square(Rectangle):
     def __init__(self, size, x=0, y=0, id=None):
         """Init Square"""
         super().__init__(size, size, x, y, id)
-        self.size = ssize
+        self.size = size
 
     @property
     def size(self):
@@ -33,7 +34,7 @@ class Square(Rectangle):
         """Update Attributes"""
         if len(args):
             for i, j in enumerate(args):
-                if i = 0:
+                if i == 0:
                     self.id = j
                 elif i == 1:
                     self.size = j
