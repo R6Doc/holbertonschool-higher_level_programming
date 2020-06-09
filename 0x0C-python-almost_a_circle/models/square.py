@@ -39,9 +39,9 @@ class Square(Rectangle):
                 elif i == 1:
                     self.size = j
                 elif i == 2:
-                    self.y = j
-                elif i == 3:
                     self.x = j
+                elif i == 3:
+                    self.y = j
         else:
             if "id" in kwargs:
                 self.id = kwargs["id"]
@@ -53,7 +53,7 @@ class Square(Rectangle):
                 self.y = kwargs["y"]
 
     def to_dictionary(self):
-        """dictionary of a Squaress"""
+        """dictionary of a Squares"""
         d = {}
         d["id"] = self.id
         d["size"] = self.size
