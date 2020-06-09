@@ -34,3 +34,17 @@ class Base:
                 lo.append(cls.to_dictionary(i))
         with open(filename, 'w') as f:
             f.write(cls.to_json_string(lo))
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """returnJSON strring of a list of dictionaries"""
+        if list_dictionaries is None:
+            list_dictionaries = []
+        return json.dumps(list_dictionaries)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """return list of JSON string json_string"""
+        if json_string is None or len(json_string) == 0:
+            return []
+        return json.loads(json_string)
