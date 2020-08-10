@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Print city objst from database
 """
