@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-states from the database hbtn_0e_0_usa with given name and is safe fromSQL injections
+states from the database hbtn_0e_0_usa is safe fromSQL injections
 """
 
 import MySQLdb
