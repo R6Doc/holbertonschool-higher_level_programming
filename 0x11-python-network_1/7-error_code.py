@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Dysplay body of response 
+Dysplay body of response
 """
 if __name__ == '__main__':
     import requests
