@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Dysplay body of request 
+Dysplay body of request
 """
 if __name__ == "__main__":
     import urllib.error as error
